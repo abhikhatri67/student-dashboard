@@ -1,9 +1,11 @@
 .sidenav-container {
   height: 100%;
+  color: white;
 }
 
 .sidenav {
-  width: 200px;
+  width: 240px;
+  background: #333269;
 }
 
 .sidenav .mat-toolbar {
@@ -14,4 +16,51 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.nav--logo {
+  margin: 0 1rem;
+}
+
+.nav-list .mat-list-item {
+  // font-family: SF Pro Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #c0beff;
+}
+
+.material-icons-outlined {
+  color: grey;
+}
+
+.sidenav img:last-child {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.sidenav div button {
+  float: right;
+  margin-top: 0.5rem;
+}
+
+.sidenav div button mat-icon {
+  color: grey;
+  font-size: 20px;
+}
+
+.nav-list .mat-list-item span {
+  margin-left: 1rem;
+}
+
+.nav-list .mat-list-item:first-child {
+  color: white;
+  font-size: 18px;
+}
+
+.nav-list .mat-list-item .mat-list-item-content {
+  justify-content: center !important;
 }
