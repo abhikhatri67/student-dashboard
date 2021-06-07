@@ -1,3 +1,9 @@
-<app-program></app-program>
-<mat-divider></mat-divider>
-<app-program></app-program>
+<ng-container *ngFor="let program of activePrograms; let i = index">
+  <app-program
+    [subjects]="program.subjects"
+    [course]="program.course"
+    [universityName]="program.universityName"
+    [universityLogo]="program.universityLogo"
+  ></app-program>
+  <mat-divider *ngIf="i != activePrograms.length - 1"></mat-divider>
+</ng-container>

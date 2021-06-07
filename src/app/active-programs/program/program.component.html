@@ -1,17 +1,15 @@
 <div class="program-container">
   <div class="program-container--content-left">
     <div>
-      <img src="assets/programs/upstate.png" />
+      <img [src]="universityLogo" />
     </div>
     <div>
       <div>
         <mat-chip-list aria-label="Course">
-          <mat-chip color="primary" selected
-            >Master of computer Science</mat-chip
-          >
+          <mat-chip color="primary" selected>{{ course }}</mat-chip>
         </mat-chip-list>
       </div>
-      <div class="university-name">University of Upsate at Brookstore</div>
+      <div class="university-name">{{ universityName }}</div>
     </div>
   </div>
   <div class="program-container--content-right">

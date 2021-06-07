@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-program',
@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./program.component.scss'],
 })
 export class ProgramComponent implements OnInit {
-  subjects: { name: string; mark: number | string }[] = [
-    { name: 'Overdue Assignment', mark: 1 },
-    { name: 'Remaining Absenses', mark: 5 },
-    { name: 'Academic Average', mark: 'A-' },
-  ];
+  @Input() subjects: { name: string; mark: number | string }[] = [];
+  @Input() universityName: string = '';
+  @Input() universityLogo: string = '';
+  @Input() course: string = '';
 
   constructor() {}
 

@@ -13,8 +13,8 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { id: 'active-programs', title: 'Active Programs', cols: 3, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
+          { id: 'active-programs', title: 'Active Programs', cols: 2, rows: 1 },
+          { title: 'Card 2', cols: 2, rows: 1 },
           { title: 'Card 3', cols: 2, rows: 1 },
         ];
       }
