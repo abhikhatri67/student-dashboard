@@ -14,15 +14,15 @@ export class DashboardComponent {
       if (matches) {
         return [
           { id: 'active-programs', title: 'Active Programs', cols: 2, rows: 1 },
-          { title: 'Card 2', cols: 2, rows: 1 },
-          { title: 'Card 3', cols: 2, rows: 1 },
+          { id: 'program', title: '', cols: 1, rows: 1 },
+          { title: 'Upcoming Sessions', cols: 3, rows: 1 },
         ];
       }
 
       return [
         { id: 'active-programs', title: 'Active Programs', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 1 },
+        { id: 'program', title: '', cols: 1, rows: 1 },
+        { title: 'Upcoming Sessions', cols: 1, rows: 1 },
       ];
     })
   );

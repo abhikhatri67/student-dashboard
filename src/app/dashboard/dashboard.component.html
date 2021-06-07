@@ -7,7 +7,7 @@
       [rowspan]="card.rows"
     >
       <mat-card class="dashboard-card">
-        <mat-card-header>
+        <mat-card-header *ngIf="card.id !== 'program'">
           <mat-card-title>
             {{ card.title }}
             <button
@@ -28,6 +28,9 @@
           <div [ngSwitch]="card.id">
             <div *ngSwitchCase="'active-programs'">
               <app-active-programs></app-active-programs>
+            </div>
+            <div *ngSwitchCase="'program'">
+              <img src="assets/images/uxresearch.png" alt="" />
             </div>
           </div>
         </mat-card-content>
