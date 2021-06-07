@@ -14,10 +14,32 @@ import { NavComponent } from './nav/nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { ActiveProgramsComponent } from './active-programs/active-programs.component';
+import { ProgramComponent } from './active-programs/program/program.component';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, NavComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, LayoutModule, MatToolbarModule, MatSidenavModule, MatListModule],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    NavComponent,
+    ActiveProgramsComponent,
+    ProgramComponent,
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatChipsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

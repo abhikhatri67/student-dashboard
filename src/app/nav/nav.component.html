@@ -24,7 +24,7 @@
     <img src="assets/advertising_banner.svg" alt="" />
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar>
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -34,8 +34,31 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>student-dashboard</span>
+      <div class="toolbar-container">
+        <div class="toolbar-container--input">
+          <img src="assets/icons/search.svg" />
+          <input
+            placeholder="Search course, student or instructor"
+            type="text"
+          />
+        </div>
+        <div class="line"></div>
+        <div class="toolbar-container--right-content">
+          <div class="toolbar-container--right-content-icons">
+            <img src="/assets/icons/messages.svg" />
+            <img src="/assets/icons/notifications.svg" />
+          </div>
+          <!-- <div class="toolbar-container--right-content-avatar"> -->
+          <img src="assets/avatar/mia.png" alt="" />
+          <!-- </div> -->
+          <div class="toolbar-container--right-content-avatar">
+            <strong> Mia V</strong> <br />
+            Student
+          </div>
+        </div>
+      </div>
     </mat-toolbar>
+    <span>Hello Mia!</span>
     <app-dashboard></app-dashboard>
   </mat-sidenav-content>
 </mat-sidenav-container>

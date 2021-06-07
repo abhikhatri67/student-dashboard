@@ -1,3 +1,7 @@
+:host {
+  --text-color: #c0beff;
+}
+
 .sidenav-container {
   height: 100%;
   color: white;
@@ -18,6 +22,10 @@
   z-index: 1;
 }
 
+.mat-toolbar {
+  background-color: white;
+}
+
 .nav--logo {
   margin: 0 1rem;
 }
@@ -30,7 +38,7 @@
   line-height: 19px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: #c0beff;
+  color: var(--text-color);
 }
 
 .material-icons-outlined {
@@ -63,4 +71,53 @@
 
 .nav-list .mat-list-item .mat-list-item-content {
   justify-content: center !important;
+}
+
+/* Toolbar CSS */
+
+.toolbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-container--input input {
+  padding: 1rem;
+  border: none;
+  width: 50vw;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.toolbar-container--input {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-container--input input:focus {
+  outline: none;
+  border: none;
+  color: var(--text-color);
+}
+
+.line {
+  height: 40px;
+  border: 1px solid #07102f;
+  opacity: 0.2;
+}
+
+.toolbar-container--right-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolbar-container--right-content-avatar {
+  // display: flex;
+  font-size: 14px;
+}
+
+.toolbar-container--right-content-avatar {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-left: 0.5rem;
 }

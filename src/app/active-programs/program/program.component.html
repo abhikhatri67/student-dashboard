@@ -1,0 +1,37 @@
+<div class="program-container">
+  <div class="program-container--content-left">
+    <div>
+      <img src="assets/programs/upstate.png" />
+    </div>
+    <div>
+      <div>
+        <mat-chip-list aria-label="Course">
+          <mat-chip color="primary" selected
+            >Master of computer Science</mat-chip
+          >
+        </mat-chip-list>
+      </div>
+      <div class="university-name">University of Upsate at Brookstore</div>
+    </div>
+  </div>
+  <div class="program-container--content-right">
+    <div *ngFor="let subject of subjects">
+      <div class="program-mark">{{ subject.mark }}</div>
+      <div class="program-subject">{{ subject.name }}</div>
+    </div>
+    <!-- Progress bar -->
+    <div class="circular-progress">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        aria-labelledby="title"
+        role="graphic"
+      >
+        <title id="title">svg circular progress bar</title>
+        <circle cx="50" cy="50" r="40"></circle>
+        <circle cx="50" cy="50" r="40" id="pct-ind"></circle>
+      </svg>
+      <p class="pct">70%</p>
+    </div>
+  </div>
+</div>

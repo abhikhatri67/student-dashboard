@@ -1,3 +1,7 @@
+:host {
+  --primary-color: #333269;
+}
+
 .grid-container {
   margin: 20px;
 }
@@ -18,4 +22,11 @@
 
 .dashboard-card-content {
   text-align: center;
+}
+
+.dashboard-card mat-card-header mat-card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--primary-color);
+  font-weight: 500;
 }
