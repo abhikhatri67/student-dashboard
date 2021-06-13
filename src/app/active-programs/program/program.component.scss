@@ -11,10 +11,15 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .program-container--content-right {
   display: flex;
   flex-basis: 60%;
   justify-content: space-around;
+}
+
+.program-container--content-left div:nth-child(2) {
+  flex-basis: 60%;
 }
 
 .university-name {
@@ -29,7 +34,7 @@
 }
 
 .program-mark {
-  // font-family: MuseModerno;
+  font-family: "MuseoModerno";
   color: #9592a6;
   font-style: normal;
   font-weight: bold;
@@ -54,10 +59,9 @@ $circle-circumstance: (2 * (22 / 7) * 40);
 
 .circular-progress {
   position: relative;
-  // margin-top: 0.5rem;
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   svg {
     transform: rotate(270deg);
@@ -80,10 +84,18 @@ $circle-circumstance: (2 * (22 / 7) * 40);
   }
 
   .pct {
+    font-family: "MuseoModerno";
+    color: #9592a6;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
   }
 }

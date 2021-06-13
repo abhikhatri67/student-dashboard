@@ -1,13 +1,23 @@
 <div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
+  <div class="dashboard-header">
+    <div class="user-info">
+      <span>Hello Mia!</span>
+    </div>
+    <div class="customize-btn">
+      <button mat-button>
+        <img src="assets/icons/customize.png" alt="" />
+        Customize
+      </button>
+    </div>
+  </div>
+  <mat-grid-list cols="12" rowHeight="350px">
     <mat-grid-tile
       *ngFor="let card of cards | async"
       [colspan]="card.cols"
       [rowspan]="card.rows"
     >
       <mat-card class="dashboard-card">
-        <mat-card-header *ngIf="card.id !== 'program'">
+        <mat-card-header *ngIf="card.id !== 'program-progress'">
           <mat-card-title>
             {{ card.title }}
             <button
@@ -15,6 +25,7 @@
               class="more-button"
               [matMenuTriggerFor]="menu"
               aria-label="Toggle menu"
+              color="primary"
             >
               <mat-icon>more_horiz</mat-icon>
             </button>
@@ -29,8 +40,11 @@
             <div *ngSwitchCase="'active-programs'">
               <app-active-programs></app-active-programs>
             </div>
-            <div *ngSwitchCase="'program'">
-              <img src="assets/images/uxresearch.png" alt="" />
+            <div *ngSwitchCase="'program-progress'">
+              <app-program-progress></app-program-progress>
+            </div>
+            <div *ngSwitchCase="'upcoming-sessions'">
+              <app-upcoming-session></app-upcoming-session>
             </div>
           </div>
         </mat-card-content>

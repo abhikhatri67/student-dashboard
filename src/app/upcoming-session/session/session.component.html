@@ -1,0 +1,16 @@
+<div class="session-container">
+  <div class="session-date">
+    <div>{{ sessionDetails.day }}</div>
+    <div>{{ sessionDetails.date }}</div>
+    <div>{{ sessionDetails.month }}</div>
+  </div>
+  <div class="session-info" [ngClass]="{ active: sessionDetails.active }">
+    <div>
+      <div>{{ sessionDetails.name }}</div>
+      <div>{{ sessionDetails.course }}</div>
+    </div>
+    <mat-chip selected
+      >{{ sessionDetails.startTime }}-{{ sessionDetails.endTime }}</mat-chip
+    >
+  </div>
+</div>

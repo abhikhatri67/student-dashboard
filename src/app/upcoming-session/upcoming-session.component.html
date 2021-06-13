@@ -1,0 +1,15 @@
+<div class="upcoming-session-container">
+  <div class="upcoming-session--headings">
+    <div>Date</div>
+    <div>Class</div>
+    <div>Time</div>
+  </div>
+
+  <div *ngFor="let session of sessions; let i = index">
+    <app-session [sessionDetails]="session"></app-session>
+    <mat-divider *ngIf="i != sessions.length - 1"></mat-divider>
+  </div>
+  <div class="upcoming-session--action">
+    <a>See All Sessions</a>
+  </div>
+</div>

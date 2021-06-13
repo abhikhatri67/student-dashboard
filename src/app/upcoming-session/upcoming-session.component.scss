@@ -1,0 +1,38 @@
+.upcoming-session-container {
+  margin: 1rem;
+}
+
+.upcoming-session--headings {
+  color: #65708d;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upcoming-session--headings div:nth-child(1) {
+  flex-basis: 17%;
+}
+
+.upcoming-session--headings div:nth-child(2) {
+  flex-basis: 62%;
+}
+
+.upcoming-session--headings div:nth-child(3) {
+  flex-basis: 21%;
+}
+
+.upcoming-session--headings div {
+  flex: 1;
+  text-align: left;
+}
+
+.upcoming-session--action {
+  // font-family: SF Pro Display;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #5855d6;
+}

@@ -17,6 +17,9 @@ import { MatListModule } from '@angular/material/list';
 import { ActiveProgramsComponent } from './active-programs/active-programs.component';
 import { ProgramComponent } from './active-programs/program/program.component';
 import { MatChipsModule } from '@angular/material/chips';
+import { UpcomingSessionComponent } from './upcoming-session/upcoming-session.component';
+import { SessionComponent } from './upcoming-session/session/session.component';
+import { ProgramProgressComponent } from './program-progress/program-progress.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { MatChipsModule } from '@angular/material/chips';
     NavComponent,
     ActiveProgramsComponent,
     ProgramComponent,
+    UpcomingSessionComponent,
+    SessionComponent,
+    ProgramProgressComponent,
   ],
   imports: [
     BrowserModule,

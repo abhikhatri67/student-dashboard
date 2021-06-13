@@ -85,7 +85,7 @@
   border: none;
   width: 50vw;
   font-size: 16px;
-  color: var(--text-color);
+  color: #8695a0;
 }
 
 .toolbar-container--input {
@@ -96,7 +96,6 @@
 .toolbar-container--input input:focus {
   outline: none;
   border: none;
-  color: var(--text-color);
 }
 
 .line {
@@ -111,9 +110,13 @@
   justify-content: space-between;
 }
 
+.toolbar-container--right-content-icons {
+  margin: 1rem 1.5rem 0px 2rem;
+}
+
 .toolbar-container--right-content-avatar {
-  // display: flex;
   font-size: 14px;
+  margin-top: 0.2rem;
 }
 
 .toolbar-container--right-content-avatar {

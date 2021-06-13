@@ -1,0 +1,96 @@
+.session-container {
+  padding: 0.7rem 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.session-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 83%;
+}
+
+.session-date {
+  flex-basis: 9%;
+}
+
+.active {
+  /* active */
+  box-shadow: 0px 14px 20px 0px #0000001a;
+  height: 48px;
+  width: 270px;
+  background: #fafaff;
+  border-radius: 10px;
+}
+
+.session-date div:nth-child(1) {
+  color: #5855d6;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.session-date div:nth-child(2),
+.session-date div:nth-child(3) {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 11.93px;
+  text-align: center;
+  color: #65708d;
+}
+
+.session-date div:nth-child(2) {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.session-date div:nth-child(3) {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.session-info div:nth-child(1) {
+  text-align: left;
+}
+
+.session-info div:nth-child(1) div:nth-child(1) {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.session-info div:nth-child(1) div:nth-child(2) {
+  color: #65708d;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.session-info mat-chip {
+  color: #333269 !important;
+  font-size: 12px;
+  line-height: 11px;
+  font-weight: 600;
+  width: 10vw;
+  background-color: #e7e7ff !important;
+}

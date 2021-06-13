@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-program',
@@ -10,21 +10,25 @@ export class ProgramComponent implements OnInit {
   @Input() universityName: string = '';
   @Input() universityLogo: string = '';
   @Input() course: string = '';
+  @Input() progress: number = 0;
+
+  @ViewChild('pctInd') pctInd: any;
+  @ViewChild('percent') percent: any;
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  // const slider = document.querySelector('#slider');
-  // const pct = document.querySelector('.pct');
-  // const pctIndicator = document.querySelector('#pct-ind')
-  // slider.oninput = () => {
-  // 	pct.textContent = `${slider.value}%`
+  ngAfterViewInit() {
+    this.setPercentage(this.progress);
+  }
 
-  // 	// percent for dashoffset
-  // 	const p = ( 1 - slider.value / 100 ) * (2 * (22 / 7) * 40);
-  // 	pctIndicator.style = `
-  // 		stroke-dashoffset: ${p};
-  // 	`
-  // }
+  setPercentage(percent: number): void {
+    // percent for dashoffset
+    console.log('this.percent: ', this.percent);
+    this.percent.nativeElement.textContent = `${percent}%`;
+    const p = (1 - percent / 100) * (2 * (22 / 7) * 40);
+
+    this.pctInd.nativeElement.style = `stroke-dashoffset: ${p};`;
+  }
 }

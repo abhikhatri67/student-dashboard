@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProgramsService } from './programs.service';
 
 @Component({
   selector: 'app-active-programs',
@@ -6,32 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./active-programs.component.scss'],
 })
 export class ActiveProgramsComponent implements OnInit {
-  activePrograms = [
-    {
-      universityLogo: 'assets/programs/upstate.png',
-      universityName: 'University of Upsate at Brookstore',
-      course: 'Master of Computer Science',
-      completeion: 70,
-      subjects: [
-        { name: 'Overdue Assignment', mark: 1 },
-        { name: 'Remaining Absenses', mark: 5 },
-        { name: 'Academic Average', mark: 'A-' },
-      ],
-    },
-    {
-      universityLogo: 'assets/programs/dursburg.png',
-      universityName: 'Academy of Art and Technology at Dursburg',
-      course: 'Certificate UX/UI Design',
-      completeion: 70,
-      subjects: [
-        { name: 'Overdue Assignment', mark: 0 },
-        { name: 'Remaining Absenses', mark: 6 },
-        { name: 'Academic Average', mark: '--' },
-      ],
-    },
-  ];
+  activePrograms;
 
-  constructor() {}
+  constructor(private programsService: ProgramsService) {
+    this.activePrograms = this.programsService.activePrograms;
+  }
 
   ngOnInit(): void {}
 }

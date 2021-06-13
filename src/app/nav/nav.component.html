@@ -17,7 +17,7 @@
 
     <mat-nav-list class="nav-list">
       <a *ngFor="let nav of navList" mat-list-item href="#">
-        <img [src]="nav.iconUrl" />
+        <img width="20px" [src]="nav.iconUrl" />
         <span>{{ nav.title }}</span>
       </a>
     </mat-nav-list>
@@ -55,10 +55,13 @@
             <strong> Mia V</strong> <br />
             Student
           </div>
+          <button style="margin-left: 1rem" mat-icon-button>
+            <img src="assets/icons/menu_vert.png" alt="" />
+          </button>
         </div>
       </div>
     </mat-toolbar>
-    <span>Hello Mia!</span>
+
     <app-dashboard></app-dashboard>
   </mat-sidenav-content>
 </mat-sidenav-container>
