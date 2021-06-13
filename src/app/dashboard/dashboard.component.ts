@@ -13,15 +13,24 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { id: 'active-programs', title: 'Active Programs', cols: 3, rows: 1 },
-          { id: 'program', title: '', cols: 1, rows: 1 },
-          { title: 'Upcoming Sessions', cols: 3, rows: 1 },
+          {
+            id: 'active-programs',
+            title: 'Active Programs',
+            cols: 12,
+            rows: 1,
+          },
+          { id: 'program', title: '', cols: 12, rows: 1 },
+          {
+            id: 'upcoming-sessions',
+            title: 'Upcoming Sessions',
+            cols: 12,
+            rows: 1,
+          },
         ];
       }
 
       return [
         { id: 'active-programs', title: 'Active Programs', cols: 12, rows: 1 },
-        // { id: '', title: '', cols: 3, rows: 2 },
         { id: 'program-progress', title: '', cols: 4, rows: 1 },
         {
           id: 'upcoming-sessions',

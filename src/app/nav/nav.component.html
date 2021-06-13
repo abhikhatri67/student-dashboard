@@ -17,7 +17,14 @@
 
     <mat-nav-list class="nav-list">
       <a *ngFor="let nav of navList" mat-list-item href="#">
-        <img width="20px" [src]="nav.iconUrl" />
+        <div *ngIf="nav.title == 'Dashboard'" class="active-line"></div>
+        <img
+          [ngStyle]="{
+            'margin-left': nav.title == 'Dashboard' ? '1.75rem' : '2rem'
+          }"
+          width="20px"
+          [src]="nav.iconUrl"
+        />
         <span>{{ nav.title }}</span>
       </a>
     </mat-nav-list>
@@ -52,8 +59,8 @@
           <img src="assets/avatar/mia.png" alt="" />
           <!-- </div> -->
           <div class="toolbar-container--right-content-avatar">
-            <strong> Mia V</strong> <br />
-            Student
+            <div>Mia V</div>
+            <div>Student</div>
           </div>
           <button style="margin-left: 1rem" mat-icon-button>
             <img src="assets/icons/menu_vert.png" alt="" />

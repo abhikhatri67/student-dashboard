@@ -124,3 +124,38 @@
   line-height: 1.5;
   margin-left: 0.5rem;
 }
+
+.toolbar-container--right-content-avatar div:nth-child(1) {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #0a043c;
+}
+
+.toolbar-container--right-content-avatar div:nth-child(2) {
+  margin-top: 0.3rem;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #0a043c;
+}
+
+/* TODO: Remove ngdeep from here. */
+::ng-deep .nav-list .mat-list-item .mat-list-item-content {
+  padding: 0 !important;
+}
+
+.active-line {
+  height: 34px;
+  width: 5px;
+  left: 0px;
+  top: 151px;
+  border-radius: 5px;
+  background: #ee3637;
+}
